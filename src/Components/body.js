@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { ThemeContext } from "../themeContext";
 import Container from "./container";
+import { ThemeContext } from "../themeContext";
 
 
 const StyledBody = styled.div`

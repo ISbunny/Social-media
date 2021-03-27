@@ -6,7 +6,7 @@ import twitter from '../images/icon-twitter.svg';
 import youtube from '../images/icon-youtube.svg';
 import up from '../images/icon-up.svg';
 import down from '../images/icon-down.svg';
-import DashboardCard from './DashboardCard';
+import DashboardCard from './DashBoardCard';
 
 // const StyledDashboard = styled.div`
 // grid-column:2/span 1;
@@ -17,15 +17,15 @@ import DashboardCard from './DashboardCard';
 
 const cards = [
     {
-        borderTop:"hsl(208, 92%, 53%)",
         socialIcon:facebook,
+        borderTop:"hsl(208, 92%, 53%)",
         socialIconAlt:"Facebook Icon",
         socialHandle:"@nathanf",
         followerNumber:"1987",
         followerText:"Followers",
         arrow:up,
         statText:"12 Today",
-        arrowAlt:"Increase"
+        arrowAlt:"Increase",
     },
     {
         socialIcon:twitter,
@@ -36,7 +36,7 @@ const cards = [
         followerText:"Followers",
         arrow:up,
         statText:"99 Today",
-        arrowAlt:"Increase"
+        arrowAlt:"Increase",
     },
     {
         socialIcon:instagram,
@@ -47,7 +47,7 @@ const cards = [
         followerText:"Followers",
         arrow:up,
         statText:"1099 Today",
-        arrowAlt:"Increase"
+        arrowAlt:"Increase",
     },
     {
         socialIcon:youtube,
@@ -58,18 +58,18 @@ const cards = [
         followerText:"Subscribers",
         arrow:down,
         statText:"144 Today",
-        arrowAlt:"Decrease"
+        arrowAlt:"Decrease",
     },
-
+    
 ]
 const ContainerDashboard = ()=>{
     return(
-        <>
+        <>  
         {cards.map((card,i)=><DashboardCard key={i} arrowAlt={card.arrowAlt} 
-        socialIconAlt={card.socialIconAlt} borderTop={card.borderTop} 
-        socialIcon={card.socialIcon} socialHandle={card.socialHandle} 
-        followerNumber={card.followerNumber} followerText={card.followerText} 
-        arrow={card.arrow} statText={card.statText}/>)}
+        socialIconAlt={card.socialIconAlt} borderTop={card.borderTop} socialIcon={card.socialIcon} 
+        socialHandle={card.socialHandle} followerNumber={card.followerNumber} 
+        followerText={card.followerText} arrow={card.arrow} statText={card.statText}/>
+        )}      
         </>
     );
 }

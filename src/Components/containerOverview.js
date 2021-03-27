@@ -95,7 +95,10 @@ const cards = [
 const ContainerOverview = ()=>{
     return(
         <>
-            {cards.map((card, i)=><OverviewCard key={"overview"+i} cardTitle={card.cardTitle} socialIcon={card.socialIcon} socialIconAlt={card.socialIconAlt} cardNumber={card.cardNumber} arrow={card.arrow} arrowAlt={card.arrowAlt} statText={card.statText}/>)}
+            {cards.map((card, i)=><OverviewCard key={"overview"+i} cardTitle={card.cardTitle} 
+            socialIcon={card.socialIcon} socialIconAlt={card.socialIconAlt} 
+            cardNumber={card.cardNumber} arrow={card.arrow} arrowAlt={card.arrowAlt} 
+            statText={card.statText}/>)}
         </>
     );
 }
